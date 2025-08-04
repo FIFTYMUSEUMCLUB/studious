@@ -1,60 +1,47 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fifty Museum Club</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('sfondo.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Arial', sans-serif;
-      color: white;
-      text-align: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('sfondo.jpg');
+    background-size: auto; /* mostra l'immagine alla dimensione naturale */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000; /* colore di sfondo se immagine non copre tutta la pagina */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5); /* semi trasparente */
-      padding: 40px;
-      border-radius: 12px;
-      max-width: 700px;
-    }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 700px;
+  }
 
-    .logo {
-      max-width: 150px;
-      margin-bottom: 20px;
-    }
+  .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
 
-    h1 {
-      margin-top: 0;
-      font-size: 2.5em;
-    }
+  h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+  }
 
-    p {
-      font-size: 1.2em;
-      margin: 10px 0 20px 0;
-    }
+  p {
+    font-size: 1.2em;
+    margin: 10px 0 20px 0;
+  }
 
-    a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <img src="logo.png" alt="Logo Fifty Museum Club" class="logo">
-    <h1>Benvenuti su Fifty Museum Club</h1>
-    <p>Scopri le nostre esposizioni e attività culturali.</p>
-    <p><a href="#">Esplora il sito</a></p>
-  </div>
-</body>
-</html>
+  a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
