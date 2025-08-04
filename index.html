@@ -1,47 +1,84 @@
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-image: url('sfondo.jpg');
-    background-size: auto; /* mostra l'immagine alla dimensione naturale */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #000; /* colore di sfondo se immagine non copre tutta la pagina */
-    font-family: 'Arial', sans-serif;
-    color: white;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fifty Museum Club</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-image: url('sfondo.jpg');
+      background-size: 400px; /* più piccolo */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; /* fisso durante lo scroll */
+      background-color: #000; /* fallback */
+      font-family: 'Arial', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    border-radius: 12px;
-    max-width: 700px;
-  }
+    .logo-container {
+      margin-top: 30px;
+    }
 
-  .logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-  }
+    .logo {
+      max-width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 
-  h1 {
-    margin-top: 0;
-    font-size: 2.5em;
-  }
+    .card {
+      background-color: rgba(0, 0, 0, 0.6); /* semi trasparente */
+      padding: 30px;
+      margin: 50px 20px 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      text-align: center;
+    }
 
-  p {
-    font-size: 1.2em;
-    margin: 10px 0 20px 0;
-  }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
 
-  a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-  }
-</style>
+    p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ffd700;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e0c200;
+    }
+  </style>
+</head>
+<body>
+  <!-- LOGO IN ALTO CENTRATO -->
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo Fifty Museum Club" class="logo">
+  </div>
+
+  <!-- CARD CENTRALE -->
+  <div class="card">
+    <h1>Benvenuti su Fifty Museum Club</h1>
+    <p>Scopri le nostre esposizioni, eventi e attività culturali digitali.</p>
+    <a href="#" class="btn">Scopri di più</a>
+  </div>
+</body>
+</html>
