@@ -10,36 +10,27 @@
       padding: 0;
       min-height: 100vh;
       background-image: url('sfondo.jpg');
-      background-size: cover;           /* Sfondo adattabile */
+      background-size: contain;        /* L’immagine si vede per intero */
       background-repeat: no-repeat;
       background-position: center;
-      background-attachment: fixed;     /* Sfondo fisso durante scroll */
+      background-attachment: fixed;    /* Sfondo fisso mentre scorri */
       background-color: #000;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       color: white;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-    }
-
-    .logo-container {
-      margin-top: 30px;
-    }
-
-    .logo {
-      max-width: 120px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
     }
 
     .card {
       background-color: rgba(0, 0, 0, 0.6); /* semitrasparente */
       padding: 30px;
-      margin: 50px 20px 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       max-width: 600px;
-      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     h1 {
@@ -70,14 +61,11 @@
   </style>
 </head>
 <body>
-  <div class="logo-container">
-    <img src="logo.png" alt="Logo Fifty Museum Club" class="logo" />
-  </div>
-
   <div class="card">
     <h1>Benvenuti su Fifty Museum Club</h1>
     <p>Scopri le nostre esposizioni, eventi e attività culturali digitali.</p>
-    <a href="#" class="btn">Scopri di più</a>
+    <a href="contatti.html" class="btn">Scopri di più</a>
   </div>
 </body>
 </html>
+ 
