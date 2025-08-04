@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fifty Museum Club</title>
   <style>
-   body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background-image: url('sfondo.jpg');
-  background-size: cover;          /* <-- Qui */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;    /* sfondo fisso mentre scorri */
-  background-color: #000;
-  font-family: 'Arial', sans-serif;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-image: url('sfondo.jpg');
+      background-size: cover;           /* Sfondo adattabile */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;     /* Sfondo fisso durante scroll */
+      background-color: #000;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .logo-container {
@@ -34,7 +34,7 @@
     }
 
     .card {
-      background-color: rgba(0, 0, 0, 0.6); /* semi trasparente */
+      background-color: rgba(0, 0, 0, 0.6); /* semitrasparente */
       padding: 30px;
       margin: 50px 20px 20px;
       border-radius: 10px;
@@ -61,6 +61,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -69,12 +70,10 @@
   </style>
 </head>
 <body>
-  <!-- LOGO IN ALTO CENTRATO -->
   <div class="logo-container">
-    <img src="mio-logo.png" alt="Logo Fifty Museum Club" class="logo">
+    <img src="mio-logo.png" alt="Logo Fifty Museum Club" class="logo" />
   </div>
 
-  <!-- CARD CENTRALE -->
   <div class="card">
     <h1>Benvenuti su Fifty Museum Club</h1>
     <p>Scopri le nostre esposizioni, eventi e attività culturali digitali.</p>
